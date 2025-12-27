@@ -2,65 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Order | SugarPetal</title>
+  <title>Order | Sugar Petal</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff7f5;
-      color: #5a3a3a;
+      background-color: #fff7f2;
+      color: #4a2c2a;
     }
 
     header {
-      background-color: #f6c1b0; /* peach pink */
+      background-color: #f3b6c4;
+      padding: 20px 0;
       text-align: center;
-      padding: 20px 10px;
     }
 
     header img {
-      max-width: 120px;
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
     }
 
     nav {
-      background-color: #f8d7cf; /* petal pink */
-      padding: 10px 0;
+      background-color: #f7d6de;
+      padding: 12px 0;
       text-align: center;
     }
 
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #5a3a3a;
+      color: #4a2c2a;
       font-weight: bold;
     }
 
     main {
       max-width: 600px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 20px;
+      background-color: white;
     }
 
     h2 {
       text-align: center;
-      border-bottom: 2px solid #f6c1b0;
+      border-bottom: 2px solid #f3b6c4;
       padding-bottom: 10px;
-      margin-bottom: 30px;
     }
 
-    form label {
+    label {
       display: block;
       margin-top: 15px;
     }
 
-    form input,
-    form textarea,
-    form select {
+    input,
+    textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
-      border: 1px solid #e2b7ae;
       border-radius: 5px;
+      border: 1px solid #e1b2bc;
       box-sizing: border-box;
     }
 
@@ -70,87 +73,88 @@
 
     .agreement {
       display: flex;
-      align-items: flex-start;
-      margin-top: 20px;
+      align-items: center;
       gap: 10px;
+      margin-top: 20px;
       font-size: 14px;
     }
 
     .agreement input {
-      margin-top: 3px;
+      margin: 0;
     }
 
     button {
       margin-top: 25px;
       width: 100%;
       padding: 12px;
-      background-color: #f6c1b0;
+      background-color: #f3b6c4;
       border: none;
       border-radius: 6px;
-      color: #5a3a3a;
       font-size: 16px;
+      color: #4a2c2a;
       cursor: pointer;
     }
 
     button:hover {
-      background-color: #f3b0a0;
+      background-color: #e9a6b5;
     }
 
     footer {
-      margin-top: 50px;
-      background-color: #f8d7cf;
+      background-color: #f7d6de;
       text-align: center;
       padding: 15px;
       font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="logo.png" alt="SugarPetal Logo">
-  </header>
+<header>
+  <img src="logo.png" alt="Sugar Petal Logo">
+</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="order.html">Order</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="order.html">Order</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <main>
-    <h2>Place an Order</h2>
+<main>
+  <h2>Place an Order</h2>
 
-    <form>
-      <label>Name</label>
-      <input type="text" required>
+  <form>
+    <label>Name</label>
+    <input type="text" required>
 
-      <label>Email</label>
-      <input type="email" required>
+    <label>Email</label>
+    <input type="email" required>
 
-      <label>Order Details</label>
-      <textarea rows="4" required></textarea>
+    <label>Order Details</label>
+    <textarea rows="4" required></textarea>
 
-      <label>Preferred Pickup Date</label>
-      <input type="date" required>
+    <label>Preferred Pickup Date</label>
+    <input type="date" required>
 
-      <div class="agreement">
-        <input type="checkbox" required>
-        <span>
-          I understand that orders must be placed at least 48 hours in advance.
-          Once my order is confirmed, all payments are non-refundable.
-          No cancellations, returns, or refunds are accepted.
-        </span>
-      </div>
+    <div class="agreement">
+      <input type="checkbox" required>
+      <span>
+        I understand that orders must be placed at least 48 hours in advance.
+        Once my order is confirmed, all payments are non-refundable.
+        No cancellations, returns, or refunds are accepted.
+      </span>
+    </div>
 
-      <button type="submit">Submit Order</button>
-    </form>
-  </main>
+    <button type="submit">Submit Order</button>
+  </form>
+</main>
 
-  <footer>
-    © 2025 SugarPetal
-  </footer>
+<footer>
+  © 2025 Sugar Petal
+</footer>
 
 </body>
 </html>
+
