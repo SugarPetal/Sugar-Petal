@@ -1,33 +1,31 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order | Sugar Petal</title>
+  <meta charset="UTF-8">
+  <title>Sugar Petal | Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #FFE8DF;
+      background: #fff7f2;
       color: #4a2c2a;
     }
 
     header {
-      background: #F2A9B8;
-      padding: 2rem 1rem;
+      background: #f5c2b8;
+      padding: 1.5rem 1rem;
       text-align: center;
     }
 
-    header img {
-      width: 140px;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 0.75rem;
+    header h1 {
+      margin: 0;
+      font-family: Georgia, serif;
     }
 
     nav {
-      background: #F6C39A;
+      background: #f8ddd5;
       padding: 1rem;
       text-align: center;
     }
@@ -40,54 +38,75 @@
     }
 
     main {
-      max-width: 900px;
-      margin: auto;
+      max-width: 700px;
+      margin: 2rem auto;
       padding: 2rem;
       background: white;
+      border-radius: 8px;
     }
 
     h2 {
-      border-bottom: 2px solid #F2A9B8;
-      padding-bottom: 0.5rem;
       font-family: Georgia, serif;
+      border-bottom: 2px solid #f5c2b8;
+      padding-bottom: 0.5rem;
     }
 
-    form p {
-      margin-bottom: 1rem;
+    form {
+      margin-top: 1.5rem;
     }
 
-    input,
-    textarea {
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
       width: 100%;
       padding: 0.6rem;
-      margin-top: 0.25rem;
-      border-radius: 6px;
+      margin-top: 0.4rem;
       border: 1px solid #ccc;
-      font-family: inherit;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
     }
 
+    textarea {
+      resize: vertical;
+    }
+
+    /* CHECKBOX FIX */
     .checkbox {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.75rem;
       align-items: flex-start;
       margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .checkbox input {
+      margin-top: 0.25rem;
     }
 
     button {
-      background: #F2A9B8;
-      color: #4a2c2a;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 25px;
-      cursor: pointer;
       margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      background: #f5c2b8;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #4a2c2a;
+    }
+
+    button:hover {
+      background: #e8a99e;
     }
 
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #F6C39A;
+      background: #f8ddd5;
       margin-top: 2rem;
       font-size: 0.9rem;
     }
@@ -97,9 +116,8 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Sugar Petal Logo">
   <h1>Sugar Petal</h1>
-  <p>Handmade Middle Eastern Sweets</p>
+  <p>Place an Order</p>
 </header>
 
 <nav>
@@ -110,65 +128,59 @@
 </nav>
 
 <main>
-  <h2>Place an Order</h2>
+
+  <h2>Order Request Form</h2>
 
   <p>
-    Orders must be placed at least <strong>48 hours in advance</strong>.
-    Once your request is received, we will review availability and confirm
-    pricing before payment is requested.
+    Please complete the form below to request an order.  
+    Orders are reviewed for availability, pricing, and delivery details before confirmation.
   </p>
 
   <form>
-    <p>
-      <label>Name:<br>
-        <input type="text" required>
-      </label>
-    </p>
 
-    <p>
-      <label>Email:<br>
-        <input type="email" required>
-      </label>
-    </p>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
 
-    <p>
-      <label>Order Details:<br>
-        <textarea rows="5" required></textarea>
-      </label>
-    </p>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required>
 
-    <p>
-      <label>Delivery Address:<br>
-        <textarea rows="3" required></textarea>
-      </label>
-    </p>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" required>
 
-    <p>
-      <strong>Payment Method:</strong><br>
-      Venmo only — <strong>@SugarPetalBaking</strong><br>
-      Please include your name and order item in the payment note.<br>
+    <label for="details">Order Details</label>
+    <textarea id="details" rows="5" placeholder="Items, quantities, preferred date, and any notes" required></textarea>
+
+    <p style="margin-top: 1.5rem;">
+      <strong>Payment:</strong><br>
+      Venmo only – <strong>@SugarPetalBaking</strong><br>
+      Final pricing will be provided after order review.
       Orders are confirmed once payment is received.
     </p>
 
     <div class="checkbox">
       <input type="checkbox" required>
       <label>
-        I agree that orders must be placed at least 48 hours in advance.
-        All payments are non-refundable once an order is confirmed.
-        No returns or cancellations are accepted.
+        I agree that orders must be placed at least <strong>48 hours in advance</strong>.
+        All payments are <strong>non-refundable</strong> once an order is confirmed.
+        No cancellations, returns, or refunds are accepted.
       </label>
     </div>
 
     <button type="submit">Submit Order Request</button>
+
   </form>
+
 </main>
 
 <footer>
   <p>
-    Orders require 48-hour notice • All sales final • Local delivery only
+    Orders must be placed at least <strong>48 hours in advance</strong>.<br>
+    All sales are final. Payments are non-refundable once confirmed.
   </p>
+
   <p>© 2025 Sugar Petal Baking</p>
 </footer>
 
 </body>
 </html>
+
