@@ -19,6 +19,13 @@
       text-align: center;
     }
 
+    header img {
+      width: 140px; /* SAME AS INDEX */
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 0.75rem;
+    }
+
     nav {
       background: #f7d6de;
       padding: 1rem;
@@ -45,19 +52,13 @@
       font-family: Georgia, serif;
     }
 
-    form {
-      margin-top: 1.5rem;
-    }
-
     label {
       display: block;
-      margin-top: 1rem;
+      margin-top: 1.2rem;
       font-weight: bold;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
+    input,
     textarea {
       width: 100%;
       padding: 0.6rem;
@@ -71,7 +72,7 @@
       resize: vertical;
     }
 
-    /* AGREEMENT FIX — MATCHES PAGE WIDTH & ALIGNMENT */
+    /* AGREEMENT — FIXED ALIGNMENT */
     .agreement {
       margin-top: 1.5rem;
       display: flex;
@@ -80,8 +81,8 @@
       font-size: 0.95rem;
     }
 
-    .agreement input[type="checkbox"] {
-      margin-top: 0.2rem;
+    .agreement input {
+      margin-top: 0.25rem;
     }
 
     button {
@@ -108,8 +109,9 @@
 <body>
 
 <header>
+  <img src="logo.png" alt="Sugar Petal Logo">
   <h1>Sugar Petal</h1>
-  <p>Order Request</p>
+  <p>Handmade Middle Eastern Sweets</p>
 </header>
 
 <nav>
@@ -136,14 +138,10 @@
     <label for="email">Email Address</label>
     <input type="email" id="email" required>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" required>
-
     <label for="details">Order Details</label>
-    <textarea id="details" rows="5" required
-      placeholder="Items, quantities, preferred date, and any notes"></textarea>
+    <textarea id="details" rows="5" required></textarea>
 
-    <!-- AGREEMENT — FIXED POSITION & ALIGNMENT -->
+    <!-- AGREEMENT — NOW IN CORRECT POSITION -->
     <div class="agreement">
       <input type="checkbox" id="agree" required>
       <label for="agree">
@@ -157,7 +155,6 @@
     <p style="margin-top: 1.5rem;">
       <strong>Payment:</strong><br>
       Venmo only – <strong>@SugarPetalBaking</strong><br>
-      Final pricing will be provided after review.
       Orders are confirmed once payment is received.
     </p>
 
@@ -172,9 +169,9 @@
     Orders must be placed at least <strong>48 hours in advance</strong>.<br>
     All sales are final. Payments are non-refundable once confirmed.
   </p>
-
   <p>© 2025 Sugar Petal Baking</p>
 </footer>
 
 </body>
 </html>
+
