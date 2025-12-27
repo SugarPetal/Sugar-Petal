@@ -65,6 +65,7 @@
       margin-top: 0.25rem;
       border-radius: 6px;
       border: 1px solid #ccc;
+      font-family: inherit;
     }
 
     button {
@@ -101,6 +102,7 @@
 </nav>
 
 <main>
+
   <p>
     Home-based online bakery • Serving <strong>Harrisonburg, Virginia</strong> • Local delivery only
   </p>
@@ -108,8 +110,8 @@
   <section id="about">
     <h2>About</h2>
     <p>
-      Sugar Petal creates handmade Middle Eastern–inspired desserts using traditional
-      techniques and quality ingredients. Everything is baked in small batches and made to order.
+      At Sugar Petal, we create handmade desserts inspired by Middle Eastern flavors and traditions,
+      blended with a modern, delicate touch. All treats are made in small batches and crafted with care.
     </p>
   </section>
 
@@ -118,32 +120,19 @@
 
     <h3>Baklava & Syrup Desserts</h3>
 
-    <div class="menu-item">
-      <strong>Walnut Baklava</strong><br />
-      Hand-layered phyllo pastry with walnuts and light syrup.
-    </div>
-
-    <div class="menu-item">
-      <strong>Tulumba</strong><br />
-      Crispy fried dough soaked in fragrant syrup.
-    </div>
-
-    <div class="menu-item">
-      <strong>Mini Kunafeh</strong><br />
-      Crispy shredded pastry with creamy filling.
-    </div>
+    <div class="menu-item"><strong>Walnut Baklava</strong><br />Flaky phyllo with walnuts and syrup</div>
+    <div class="menu-item"><strong>Tulumba</strong><br />Crispy syrup-soaked pastries</div>
+    <div class="menu-item"><strong>Znoud el Sit</strong><br />Cream-filled phyllo rolls</div>
 
     <h3>Cookies</h3>
 
-    <div class="menu-item">
-      <strong>Sesame Cookies</strong><br />
-      Crisp cookies coated in toasted sesame seeds.
-    </div>
+    <div class="menu-item"><strong>Sesame Cookies</strong><br />Light & crisp</div>
+    <div class="menu-item"><strong>Coconut Cookies</strong><br />Soft and chewy</div>
 
-    <div class="menu-item">
-      <strong>Coconut Cookies</strong><br />
-      Soft, chewy coconut cookies.
-    </div>
+    <h3>Cakes & Specialty Desserts</h3>
+
+    <div class="menu-item"><strong>Pistachio Cheesecake</strong><br />Creamy with pistachio topping</div>
+    <div class="menu-item"><strong>Marble Cake</strong><br />Vanilla & chocolate swirl</div>
   </section>
 
   <section id="order">
@@ -151,4 +140,40 @@
 
     <form>
       <p>
-        <label>
+        <label>Name:<br />
+          <input type="text" required />
+        </label>
+      </p>
+
+      <p>
+        <label>Email:<br />
+          <input type="email" required />
+        </label>
+      </p>
+
+      <p>
+        <label>Order Details:<br />
+          <textarea rows="5" required></textarea>
+        </label>
+      </p>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <p><em>Payment via Venmo • Delivery only</em></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: sugarpetal@example.com</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Sugar Petal
+</footer>
+
+</body>
+</html>
+
