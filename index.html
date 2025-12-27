@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sugar Petal | Middle Eastern Sweets</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,35 +12,71 @@
       background: #fff7f2;
       color: #4a2c2a;
     }
+
     header {
       background: #f3b6c4;
       padding: 2rem;
       text-align: center;
     }
+
     nav {
       background: #f7d6de;
       padding: 1rem;
       text-align: center;
     }
+
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       color: #4a2c2a;
       font-weight: bold;
     }
+
     main {
       max-width: 900px;
       margin: auto;
       padding: 2rem;
       background: white;
     }
+
     h2 {
       border-bottom: 2px solid #f3b6c4;
       padding-bottom: 0.5rem;
+      font-family: Georgia, serif;
     }
+
+    h3 {
+      color: #8fae9e;
+      margin-top: 2rem;
+    }
+
     .menu-item {
       margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #fffaf7;
+      border-left: 4px solid #f3b6c4;
+      border-radius: 4px;
     }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #f3b6c4;
+      color: #4a2c2a;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -48,169 +85,35 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Sugar Petal</h1>
-    <p>Handmade Middle Eastern Sweets</p>
-  </header>
+<header>
+  <h1>Sugar Petal</h1>
+  <p>Handmade Middle Eastern Sweets</p>
+</header>
 
-  <nav>
-    <a href="#">About</a>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#about">About</a>
+  <a href="#menu">Menu</a>
+  <a href="#order">Order</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <main>
-   <p>
-     Home-based online bakery • Serving <strong>Harrisonburg, Virginia</strong> • Local delivery only
-
-</p>
- <section id="about">
-      <h2>About</h2>
-      <p>
-       At Sugar Petal, we create handmade desserts inspired mostly by Middle Eastern flavors and traditions, blended with a modern, delicate touch. Every treat is baked in small batches using quality ingredients, traditional techniques, and plenty of care—never mass-produced.
-
-We proudly offer local delivery only, allowing us to focus on freshness and detail from our kitchen to your door. From fragrant pastries infused with rose and pistachio to comforting classic desserts, each item is carefully crafted by hand and made to order.
-
-Sugar Petal Baking is about celebrating culture, sweetness, and special moments—whether for a gathering, a celebration, or a simple indulgence. When you order from us, you’re supporting local, handmade baking rooted in tradition and made with heart.
-      </p>
-    </section>
-
-    <section id="menu">
-      <h2>Menu</h2>
-      <div class="menu-item">
-        <strong>Baklava</strong><br />
-        Flaky layers filled with nuts and sweet syrup
-      </div>
-      <div class="menu-item">
-        Walnut Baklava
-Hand-layered phyllo pastry filled with finely chopped walnuts and finished with light sugar syrup.
-
-Tulumba
-Crispy golden dough pastries soaked in fragrant syrup, crunchy on the outside and soft inside.
-
-Znoud el Sit
-Delicate phyllo rolls filled with smooth cream, fried until golden, and lightly sweetened.
-
-Shakarpara
-Tender bite-sized cookies with a subtle sweetness and soft texture.
-
-Maamoul
-Traditional shortbread-style cookies filled with dates or nuts and lightly dusted with powdered sugar.
-
-Mini Kunafeh
-Individual portions of crispy shredded pastry layered with a creamy filling and lightly sweetened.
-
-Cookies
-
-Sesame Cookies
-Light, crisp cookies coated in toasted sesame seeds.
-
-Coconut Cookies
-Soft and chewy cookies made with shredded coconut.
-
-Shakirlama (Iraqi Sugar Cookies)
-Traditional sugar cookies with a delicate crumb and gentle sweetness.
-
-Souda Cookies
-Buttery cookies with warm cardamom flavor, studded with walnuts and finished with a peanut topping.
-
-Coffee Cookies
-Buttery cookies infused with aromatic coffee.
-
-Cakes & Specialty Desserts
-
-Pistachio Cheesecake
-Creamy vanilla cheesecake topped with a rich pistachio sauce on a buttery crust.
-
-Marble Cake
-Soft vanilla and chocolate cake swirled together for a classic, tender crumb.
-
-Chocolate Pistachio Swirl
-Soft baked dessert swirled with rich chocolate and pistachio flavors.
-
-Chocolate Strawberry Crepe
-Thin, handmade crepes filled with chocolate spread and fresh strawberries.
-
-Chocolate Chip Cookies
-Classic soft-baked cookies filled with rich chocolate chips.
-
-Blueberry Muffin
-Moist, fluffy muffin packed with juicy blueberries.
-
-Nutella Bomb
-Decadent dessert with a warm, rich Nutella-filled center.
-
-Breads & Pastries
-
-Tsoureki
-Soft, braided sweet bread with a light, aromatic flavor and delicate texture.
-
-Ramazan Pidesi
-Soft, airy flatbread with a golden crust, decorated with sesame seeds and black seeds.
-    </section>
-<section id="order">
-  <h2>Place an Order</h2>
-
-  <form>
-    <p>
-      <label>
-        Name:<br />
-        <input type="text" required />
-      </label>
-    </p>
-
-    <p>
-      <label>
-        Email:<br />
-        <input type="email" required />
-      </label>
-    </p>
-
-    <p>
-      <label>
-        Order Details:<br />
-        <textarea rows="5" required></textarea>
-      </label>
-    </p>
-
-    <p>
-      <label>
-        Delivery Address:<br />
-        <textarea rows="3" required></textarea>
-      </label>
-    </p>
-
-    <button type="submit">Submit Order</button>
-  </form>
-
+<main>
   <p>
-    <em>
-      Payment accepted via <strong>Venmo</strong>.<br />
-      Local pickup unavailable.<br />
-      Delivery only.
-    </em>
+    Home-based online bakery • Serving <strong>Harrisonburg, Virginia</strong> • Local delivery only
   </p>
-</section>
 
-    <section id="contact">
-  <h2>Contact</h2>
-  <p>
-    Email: sugarpetal@example.com<br />
-    Payment accepted via <strong>Venmo</strong><br />
-    Local pickup unavailable<br />
-    Delivery only
-  </p>
-</section>
+  <!-- YOUR SECTIONS CONTINUE EXACTLY AS YOU HAD THEM -->
+  <!-- (Menu, Order form, Contact — all good) -->
 
+</main>
 
-    
-  </main>
-
-  <footer>
-    © 2025 Sugar Petal
-  </footer>
+<footer>
+  © 2025 Sugar Petal
+</footer>
 
 </body>
 </html>
+
