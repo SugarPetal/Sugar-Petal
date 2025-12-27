@@ -66,6 +66,13 @@
       font-family: inherit;
     }
 
+    /* checkbox override */
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
     button {
       background: #f3b6c4;
       color: #4a2c2a;
@@ -75,25 +82,6 @@
       border-radius: 25px;
       cursor: pointer;
       margin-top: 1rem;
-    }
-
-    /* AGREEMENT — FIXED */
-    .agreement {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      color: #4a2c2a;
-    }
-
-    .agreement label {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-    }
-
-    .agreement input {
-      width: auto;
-      margin: 0;
     }
 
     footer {
@@ -127,42 +115,38 @@
 
     <form>
       <p>
-        <label>
-          Name:<br>
+        <label>Name:<br>
           <input type="text" required>
         </label>
       </p>
 
       <p>
-        <label>
-          Email:<br>
+        <label>Email:<br>
           <input type="email" required>
         </label>
       </p>
 
       <p>
-        <label>
-          Order Details:<br>
+        <label>Order Details:<br>
           <textarea rows="5" required></textarea>
         </label>
       </p>
 
       <p>
-        <label>
-          Delivery Address:<br>
+        <label>Delivery Address:<br>
           <textarea rows="3" required></textarea>
         </label>
       </p>
 
-      <!-- AGREEMENT -->
-      <div class="agreement">
+      <!-- THIS IS THE FIXED PART -->
+      <p>
         <label>
           <input type="checkbox" required>
           I understand that orders must be placed at least 48 hours in advance.
           Once my order is confirmed, all payments are non-refundable.
           No cancellations, returns, or refunds are accepted.
         </label>
-      </div>
+      </p>
 
       <button type="submit">Submit Order</button>
     </form>
@@ -181,7 +165,6 @@
     Orders must be placed at least <strong>48 hours in advance</strong>.<br>
     All sales are final. Payments are non-refundable once an order is confirmed.
   </p>
-
   <p>© 2025 Sugar Petal Baking</p>
 </footer>
 
