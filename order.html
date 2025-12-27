@@ -33,7 +33,7 @@
     }
 
     main {
-      max-width: 600px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
       background: white;
@@ -43,11 +43,10 @@
       border-bottom: 2px solid #f3b6c4;
       padding-bottom: 0.5rem;
       font-family: Georgia, serif;
-      text-align: center;
     }
 
     form p {
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     input,
@@ -60,6 +59,11 @@
       font-family: inherit;
     }
 
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 0.5rem;
+    }
+
     button {
       background: #f3b6c4;
       color: #4a2c2a;
@@ -69,20 +73,20 @@
       border-radius: 25px;
       cursor: pointer;
       display: block;
-      margin: 1.5rem auto 0;
+      margin-top: 1.5rem;
     }
 
-    .note {
+    .payment-box {
       background: #fffaf7;
       border-left: 4px solid #f3b6c4;
       padding: 1rem;
       margin-top: 2rem;
-      font-size: 0.95rem;
+      border-radius: 4px;
     }
 
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 1rem;
       background: #f7d6de;
       margin-top: 2rem;
       font-size: 0.9rem;
@@ -105,20 +109,27 @@
 </nav>
 
 <main>
+
   <h2>Place an Order</h2>
 
+  <p>
+    Orders must be placed at least <strong>48 hours in advance</strong>.
+    All items are handmade and prepared fresh.
+  </p>
+
   <form>
+
     <p>
       <label>
         Name:<br />
-        <input type="text" required />
+        <input type="text" required>
       </label>
     </p>
 
     <p>
       <label>
         Email:<br />
-        <input type="email" required />
+        <input type="email" required>
       </label>
     </p>
 
@@ -136,36 +147,38 @@
       </label>
     </p>
 
-    <button type="submit">Submit Order Request</button>
+    <!-- ✅ LEGAL AGREEMENT CHECKBOX -->
+    <p>
+      <label>
+        <input type="checkbox" required>
+        I agree that orders must be placed at least
+        <strong>48 hours in advance</strong>.
+        I understand that <strong>payment is required to confirm my order</strong>,
+        and that all sales are <strong>final</strong>.
+        No refunds, cancellations, or returns are accepted once an order is confirmed.
+      </label>
+    </p>
+
+    <button type="submit">Submit Order</button>
+
   </form>
 
-  <div class="note">
+  <!-- PAYMENT INFO -->
+  <div class="payment-box">
     <p>
-      <strong>Payment:</strong><br />
-      Venmo only — <strong>@SugarPetalBaking</strong><br />
-      Please include your name and ordered item in the payment note.
-    </p>
-
-    <p>
-      <strong>Important:</strong><br />
-      • Orders must be placed at least <strong>48 hours in advance</strong><br />
-      • Orders are confirmed once payment is received<br />
-      • All sales are <strong>final</strong> — no refunds or returns
-    </p>
-
-    <p>
-      <strong>Delivery only.</strong> Local pickup is unavailable.
+      <strong>Payment Method:</strong><br>
+      Venmo only – <strong>@SugarPetalBaking</strong><br>
+      Please include your <strong>name</strong> and <strong>order item</strong>
+      in the payment note.<br>
+      Orders are confirmed once payment is received.
     </p>
   </div>
+
 </main>
 
 <footer>
-  <p>© 2025 Sugar Petal</p>
-  <p>
-    Orders require 48 hours notice • Payment is non-refundable once confirmed
-  </p>
+  © 2025 Sugar Petal • Orders require 48-hour notice • All sales final
 </footer>
 
 </body>
 </html>
-``
