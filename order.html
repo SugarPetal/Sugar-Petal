@@ -77,17 +77,23 @@
       margin-top: 1rem;
     }
 
-    /* AGREEMENT FIX */
+    /* AGREEMENT — FIXED */
     .agreement {
-      margin-top: 1.25rem;
-      font-weight: bold;
+      margin-top: 1rem;
       font-size: 0.95rem;
+      color: #4a2c2a;
     }
 
     .agreement label {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    .agreement input {
+      width: auto;
+      margin: 0;
     }
 
     footer {
@@ -149,14 +155,14 @@
       </p>
 
       <!-- AGREEMENT -->
-      <p class="agreement">
+      <div class="agreement">
         <label>
           <input type="checkbox" required>
           I understand that orders must be placed at least 48 hours in advance.
           Once my order is confirmed, all payments are non-refundable.
           No cancellations, returns, or refunds are accepted.
         </label>
-      </p>
+      </div>
 
       <button type="submit">Submit Order</button>
     </form>
@@ -181,4 +187,3 @@
 
 </body>
 </html>
-
